@@ -1,16 +1,16 @@
 
 """
     Написати валідатор ....
-    Правило валідації
+    Назва продукту не більше 10 літер
 """
 
 import re
 
-def getUserEmail():
+def nameOfProduct():
 
-    user_input = input(?)
-
-    if (re.match(r"?", user_input) ):
+    user_input = input()
+    list = []
+    if len(user_input)<=10:
         return user_input
     else:
         return False
@@ -18,12 +18,13 @@ def getUserEmail():
 
 """
     Написати валідатор ....
-    Правило валідації
+    Номер заліковки XX #(8 numbers)
 """
 
-def getProductName():
-    #TODO
+def stdntDoc():
+    user_input = input()
 
+    if \[A-Z]\w[ ][#]\d{8}\
 
 
 """

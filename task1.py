@@ -4,21 +4,28 @@ from data import dataset
 #   Викликати функцію
 
 
-def addUserProduct(user_name, product_name, product_price):
-    #TODO
+def addUserProduct( doc_name, data_name, product_name, dataset):
+    if doc_name in dataset:
+        if data_name in dataset[doc_name]:
+            dataset[doc_name][data_name]=product_name
+
+
+    else:
+        dataset[doc_name]= dict()
+        dataset[doc_name][data_name] = product_name
 
 
 
 print("Task 1")
 
-#Додати нового користувача та нову покупку
-addUserProduct(?,?,?)
+#додавання продукту
+addUserProduct('AA #12345678','11.11.2018','apple', dataset)
 
-#Додати існуючому користувачу нову покупку нового продукту
-addUserProduct(?,?,?)
+#додавання дати
+addUserProduct('AA #12345678','10','product_name',dataset)
 
-#Додати існуючому користувачу нову покупку існуючого продукту
-addUserProduct(?,?,?)
+#додавання продукта
+addUserProduct('doc_name', 'data_name', 'product_name',dataset)
 
 print(dataset)
 
